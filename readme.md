@@ -34,7 +34,7 @@ I like small, sharp tools: things that run fast, fail clearly, and make operatio
   <img alt="Emacs" src="https://img.shields.io/badge/Doom_Emacs-111827?style=flat-square&logo=gnu-emacs&logoColor=7F5AB6" />
 </p>
 
-## 🚀 Featured work
+## 🚀 Featured public work
 
 <table>
   <tr>
@@ -44,24 +44,30 @@ I like small, sharp tools: things that run fast, fail clearly, and make operatio
       <p><strong>Rust · RPM · packaging · CI/CD</strong></p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/jamesarch/tofu-iac">tofu-iac</a></h3>
-      <p>Infrastructure-as-code experiments and automation patterns around OpenTofu/Terraform style workflows.</p>
-      <p><strong>IaC · automation · DevOps</strong></p>
+      <h3><a href="https://github.com/jamesarch/smartdns-rs">smartdns-rs</a></h3>
+      <p>A Rust DNS utility focused on fast, practical routing and local resolver workflows.</p>
+      <p><strong>Rust · networking · DNS · ops</strong></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/jamesarch/ddns-rs">ddns-rs</a></h3>
-      <p>Rust-flavored networking utility work for practical operations tasks.</p>
-      <p><strong>Rust · networking · ops</strong></p>
+      <h3><a href="https://github.com/jamesarch/cloudflare-docker-proxy">cloudflare-docker-proxy</a></h3>
+      <p>A Cloudflare Worker-based Docker registry proxy for lightweight infra and distribution workflows.</p>
+      <p><strong>JavaScript · edge · containers</strong></p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/jamesarch/cheat">cheat</a></h3>
-      <p>Personal CLI notes and command-line productivity helpers.</p>
-      <p><strong>CLI · shell · productivity</strong></p>
+      <h3><a href="https://github.com/jamesarch/jamesarch.github.io">jamesarch.github.io</a></h3>
+      <p>Personal website and public landing space.</p>
+      <p><strong>Web · portfolio · publishing</strong></p>
     </td>
   </tr>
 </table>
+
+## 🌱 Public ecosystem work
+
+- **Nix / NixOS** — package and system ecosystem work in `nixpkgs`
+- **Homebrew** — formula maintenance and macOS/Linux package distribution in `homebrew-core`
+- **Rust platform tooling** — work around `coreutils`, `actix-web_examples`, and related ecosystem repos
 
 ## ⚙️ Operating style
 
