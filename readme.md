@@ -1,4 +1,14 @@
-<pre>
+<div align="center">
+
+<img src="assets/retro-terminal.svg" alt="retro terminal banner" width="100%" />
+
+</div>
+
+---
+
+# jamesarch
+
+```bash
 $ whoami
 James
 
@@ -7,30 +17,6 @@ DevOps engineer
 Linux/*nix enjoyer
 CLI builder
 Rust systems-tooling packager
-
-$ ls /projects
-createrepo_rs
-smartdns-rs
-cloudflare-docker-proxy
-jamesarch.github.io
-nixpkgs
-homebrew-core
-coreutils
-actix-web_examples
-</pre>
-
----
-
-# jamesarch
-
-```
-          .--.
-         |o_o |
-         |:_/ |
-        //   \ \\
-       (|     | )
-      /'\_   _/`\
-      \___)=(___/
 ```
 
 > small tools
@@ -41,7 +27,7 @@ actix-web_examples
 
 I build boring, reliable infrastructure and sharp CLI tooling.
 
-- CI/CD, packaging, release pipelines
+- CI/CD, packaging, release pipelines, reproducible builds
 - Debian / RPM / Linux ecosystem work
 - Rust for ops, static binaries, reproducible builds
 - shell-native workflows over dashboard-heavy glue
