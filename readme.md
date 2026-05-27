@@ -1,96 +1,99 @@
-<div align="center">
+<pre>
+$ whoami
+James
 
-# Hi, I'm James 👋
+$ cat /etc/profile.d/jamesarch
+DevOps engineer
+Linux/*nix enjoyer
+CLI builder
+Rust systems-tooling packager
 
-**DevOps engineer · Linux/*nix enjoyer · CLI builder · Rust systems-tooling packager**
-
-I like small, sharp tools: things that run fast, fail clearly, and make operations less painful.
-
-[![GitHub followers](https://img.shields.io/github/followers/jamesarch?style=for-the-badge&logo=github)](https://github.com/jamesarch)
-[![Profile views](https://komarev.com/ghpvc/?username=jamesarch&style=for-the-badge&color=blueviolet)](https://github.com/jamesarch)
-
-</div>
+$ ls /projects
+createrepo_rs
+smartdns-rs
+cloudflare-docker-proxy
+jamesarch.github.io
+nixpkgs
+homebrew-core
+coreutils
+actix-web_examples
+</pre>
 
 ---
 
-## 🧭 What I work on
+# jamesarch
 
-- **Infrastructure & automation** — CI/CD, packaging, release pipelines, reproducible builds.
-- **Linux operations** — Debian, RPM ecosystems, mirrors, system services, observability.
-- **CLI-first tooling** — scripts and binaries that fit naturally into shells and pipelines.
-- **Rust for ops** — replacing fragile glue with fast, static, memory-safe tools.
+```
+          .--.
+         |o_o |
+         |:_/ |
+        //   \ \\
+       (|     | )
+      /'\_   _/`\
+      \___)=(___/
+```
 
-## 🛠️ Toolbox
+> small tools
+> clear failures
+> terminal first
 
-<p>
-  <img alt="Linux" src="https://img.shields.io/badge/Linux-111827?style=flat-square&logo=linux&logoColor=white" />
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-111827?style=flat-square&logo=rust&logoColor=white" />
-  <img alt="Go" src="https://img.shields.io/badge/Go-111827?style=flat-square&logo=go&logoColor=00ADD8" />
-  <img alt="Python" src="https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=FFD43B" />
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-111827?style=flat-square&logo=docker&logoColor=2496ED" />
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-111827?style=flat-square&logo=githubactions&logoColor=2088FF" />
-  <img alt="OpenTofu" src="https://img.shields.io/badge/OpenTofu-111827?style=flat-square&logo=opentofu&logoColor=FFDA18" />
-  <img alt="Neovim" src="https://img.shields.io/badge/Vim%2FNeovim-111827?style=flat-square&logo=vim&logoColor=019733" />
-  <img alt="Emacs" src="https://img.shields.io/badge/Doom_Emacs-111827?style=flat-square&logo=gnu-emacs&logoColor=7F5AB6" />
-</p>
+## /about
 
-## 🚀 Featured public work
+I build boring, reliable infrastructure and sharp CLI tooling.
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3><a href="https://github.com/jamesarch/createrepo_rs">createrepo_rs</a></h3>
-      <p>Pure Rust RPM repository metadata generator. Built for dnf/yum repos, static binaries, CI/CD, and production mirror workflows.</p>
-      <p><strong>Rust · RPM · packaging · CI/CD</strong></p>
-    </td>
-    <td width="50%">
-      <h3><a href="https://github.com/jamesarch/smartdns-rs">smartdns-rs</a></h3>
-      <p>A Rust DNS utility focused on fast, practical routing and local resolver workflows.</p>
-      <p><strong>Rust · networking · DNS · ops</strong></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3><a href="https://github.com/jamesarch/cloudflare-docker-proxy">cloudflare-docker-proxy</a></h3>
-      <p>A Cloudflare Worker-based Docker registry proxy for lightweight infra and distribution workflows.</p>
-      <p><strong>JavaScript · edge · containers</strong></p>
-    </td>
-    <td width="50%">
-      <h3><a href="https://github.com/jamesarch/jamesarch.github.io">jamesarch.github.io</a></h3>
-      <p>Personal website and public landing space.</p>
-      <p><strong>Web · portfolio · publishing</strong></p>
-    </td>
-  </tr>
-</table>
+- CI/CD, packaging, release pipelines
+- Debian / RPM / Linux ecosystem work
+- Rust for ops, static binaries, reproducible builds
+- shell-native workflows over dashboard-heavy glue
 
-## 🌱 Public ecosystem work
+## /tools
 
-- **Nix / NixOS** — package and system ecosystem work in `nixpkgs`
-- **Homebrew** — formula maintenance and macOS/Linux package distribution in `homebrew-core`
-- **Rust platform tooling** — work around `coreutils`, `actix-web_examples`, and related ecosystem repos
+```text
+linux    rust    go    python    docker    git
+ci/cd    rpm     deb    nix       homebrew  opentofu
+vim      neovim  emacs  shell     terminals
+```
 
-## ⚙️ Operating style
+## /work
+
+```text
+$ git clone https://github.com/jamesarch/createrepo_rs
+$ cd createrepo_rs
+$ cargo run -- /path/to/rpms
+```
+
+### public repos worth a look
+
+- [`createrepo_rs`](https://github.com/jamesarch/createrepo_rs) — Rust RPM repository metadata generator
+- [`smartdns-rs`](https://github.com/jamesarch/smartdns-rs) — Rust DNS utility for resolver workflows
+- [`cloudflare-docker-proxy`](https://github.com/jamesarch/cloudflare-docker-proxy) — container registry proxy on the edge
+- [`jamesarch.github.io`](https://github.com/jamesarch/jamesarch.github.io) — personal website / landing page
+
+### ecosystem trails
+
+- `nixpkgs`
+- `homebrew-core`
+- `coreutils`
+- `actix-web_examples`
+
+## /style
 
 ```text
 prefer boring reliability over clever fragility
 prefer static binaries over dependency piles
 prefer observable failures over silent magic
-prefer terminal workflows over dashboards when possible
+prefer terminal workflows over dashboards
 ```
 
-## 📊 GitHub activity
+## /status
 
-GitHub stats widgets can be flaky because they depend on third-party services. Instead, here are a few public repos that currently reflect the kind of work I spend time on:
-
-- [`createrepo_rs`](https://github.com/jamesarch/createrepo_rs) — Rust RPM repository metadata generator
-- [`smartdns-rs`](https://github.com/jamesarch/smartdns-rs) — Rust DNS utility for practical resolver workflows
-- [`cloudflare-docker-proxy`](https://github.com/jamesarch/cloudflare-docker-proxy) — edge proxy for container distribution
-- [`jamesarch.github.io`](https://github.com/jamesarch/jamesarch.github.io) — personal website / landing page
+No third-party stats widgets.
+No broken embeds.
+No private repos.
 
 ---
 
-<div align="center">
-
-**❤ *nix · ❤ CLI · ❤ Doom Emacs & Vim**
-
-</div>
+<pre>
+$ uptime
+systems up, scripts sharp, logs readable
+</pre>
