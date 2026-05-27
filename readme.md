@@ -80,12 +80,12 @@ prefer terminal workflows over dashboards when possible
 
 ## 📊 GitHub activity
 
-<div align="center">
+GitHub stats widgets can be flaky because they depend on third-party services. Instead, here are a few public repos that currently reflect the kind of work I spend time on:
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=jamesarch&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jamesarch&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
+- [`createrepo_rs`](https://github.com/jamesarch/createrepo_rs) — Rust RPM repository metadata generator
+- [`smartdns-rs`](https://github.com/jamesarch/smartdns-rs) — Rust DNS utility for practical resolver workflows
+- [`cloudflare-docker-proxy`](https://github.com/jamesarch/cloudflare-docker-proxy) — edge proxy for container distribution
+- [`jamesarch.github.io`](https://github.com/jamesarch/jamesarch.github.io) — personal website / landing page
 
 ---
 
