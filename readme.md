@@ -1,11 +1,3 @@
-<div align="center">
-
-<img src="assets/retro-terminal.svg" alt="retro terminal banner" width="100%" />
-
-</div>
-
----
-
 # jamesarch
 
 ```bash
