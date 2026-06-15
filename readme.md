@@ -64,13 +64,18 @@ rust-course            ✓ merged
 ---
 
 ```
-$ cat ~/.config/stack
+$ cat ~/.config/runs-in-prod
 
-infra      k8s (k3s + prod multi-cluster)  ansible  opentofu  vsphere+govmomi  kvm/hyper-v
-observe    zabbix  victoriametrics  clickhouse  prometheus  grafana  vector  alertmanager
-languages  rust · go · python · shell
-network    wireguard  quic/quinn  mtls  iptables/conntrack/netfilter  bgp-adjacent
-ai/ops     mcp server  llm agent orchestration  openai-compat gateway  prompt security
+# things I build
+lang       rust · go · python · shell
+own        createrepo_rs  browser-autos  ghostty-patched  ansible-over-wss  vsphere-iac
+
+# things I operate at scale (80B req/day · 10k agents · 200+ global nodes)
+container  kubernetes (k3s + multi-cluster)  docker  containerd
+platform   hermes-agent  mcp-server  openai-compat-gateway
+observe    zabbix 7.0  victoriametrics  clickhouse  prometheus  grafana  vector  alertmanager
+infra      ansible  opentofu  vsphere+govmomi  hyper-v  kvm  routeros
+network    wireguard  quic/quinn  mtls  iptables/conntrack/netfilter
 
 $ cat ~/.config/approach
 
