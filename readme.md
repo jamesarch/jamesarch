@@ -1,77 +1,85 @@
-# jamesarch
-
-```bash
+```
 $ whoami
-James
+jamesarch — Staff SRE / Platform Engineer
+10 yrs infra · 8 yrs full-remote · China → anywhere async
 
-$ cat /etc/profile.d/jamesarch
-DevOps engineer
-Linux/*nix enjoyer
-CLI builder
-Rust systems-tooling packager
+$ uname -a
+production  80B+ daily requests  95k+ enterprise clients  10k+ live agents  200+ global nodes
 ```
 
-> small tools
-> clear failures
-> terminal first
+---
 
-## /about
+```
+$ cat /proc/impact
 
-I build boring, reliable infrastructure and sharp CLI tooling.
+[observability]   zabbix 3934 nvps · profiled rcache utilization (0.4% actual vs. overconfig)
+                  → cpu 36→12 cores (-67%)  load 175→32 (-82%)  nvps flat  zero restart
 
-- CI/CD, packaging, release pipelines, reproducible builds
-- Debian / RPM / Linux ecosystem work
-- Rust for ops, static binaries, reproducible builds
-- shell-native workflows over dashboard-heavy glue
+[data-integrity]  clickhouse 4-shard cluster misconfigured as 2S×2R + internal_replication
+                  → 36-59% silent read loss per query · fixed via hot-reload · 19 TB reclaimed
 
-## /tools
+[memory]          glibc per-thread arena fragmentation under ~2k msg/s json churn
+                  → mimalloc  2000 MiB/pod → 250 MiB/pod (-87%)  no leak  no restart
 
-```text
-linux    rust    go    python    docker    git
-ci/cd    rpm     deb    nix       homebrew  opentofu
-vim      neovim  emacs  shell     terminals
+[ha-platform]     10k-agent websocket mgmt: single instance → redis-backed multi-replica
+                  (presence · pub-sub routing · sigterm drain)
+                  → rolling restart agent downtime <1s  vs  full-restart = 2200 agents drop
+
+[incident-492]    7600 overseas agents offline · machines alive · no app error
+                  root: oversea dns line → broken cloudflare cname → 403 on /ws/agent
+                  fix:  dig +subnet confirmed · direct A record · 4 min full recovery
 ```
 
-## /work
+---
 
-```text
-$ git clone https://github.com/jamesarch/createrepo_rs
-$ cd createrepo_rs
-$ cargo run -- /path/to/rpms
+```
+$ ls -la ~/oss/
 ```
 
-### public repos worth a look
+**[`createrepo_rs`](https://github.com/jamesarch/createrepo_rs)** — Rust RPM repo metadata generator  
+`thread::scope` + `crossbeam` parallel scan · in-memory SQLite · single `VACUUM INTO` flush  
+254 pkg: `10.5s → 0.078s` (~130×) · musl static · `.deb` `.rpm` debian-src · 4 MB scratch docker  
+packaged in COPR / AUR / Debian
 
-- [`createrepo_rs`](https://github.com/jamesarch/createrepo_rs) — Rust RPM repository metadata generator
-- [`smartdns-rs`](https://github.com/jamesarch/smartdns-rs) — Rust DNS utility for resolver workflows
-- [`cloudflare-docker-proxy`](https://github.com/jamesarch/cloudflare-docker-proxy) — container registry proxy on the edge
-- [`jamesarch.github.io`](https://github.com/jamesarch/jamesarch.github.io) — personal website / landing page
+**[`hermes-agent`](https://github.com/jamesarch/hermes-agent)** — production AIOps agent  
+natural language → metrics / ansible / vsphere via MCP · 3-tier model fallback  
+systemd resident · zero inbound ports · full SQLite audit log per action · running in prod
 
-### ecosystem trails
+**[`ghostty-patched`](https://github.com/jamesarch/ghostty-patched)** — personal ghostty build  
+`new_tab_with_command` · `link-file` · concurrency deadlock fix on link-click  
+VOUCHED contributor → [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)
 
-- `nixpkgs`
-- `homebrew-core`
-- `coreutils`
-- `actix-web_examples`
+```
+$ gh pr list --author jamesarch --state merged --repo upstream
+kubernetes/kubernetes  ✓ merged
+nushell/nushell        ✓ merged
+aya-rs/aya             ✓ merged
+actix/actix-web        ✓ merged
+rust-course            ✓ merged
+```
 
-## /style
+---
 
-```text
+```
+$ cat ~/.config/stack
+
+infra      k8s (k3s + prod multi-cluster)  ansible  opentofu  vsphere+govmomi  kvm/hyper-v
+observe    zabbix  victoriametrics  clickhouse  prometheus  grafana  vector  alertmanager
+languages  rust · go · python · shell
+network    wireguard  quic/quinn  mtls  iptables/conntrack/netfilter  bgp-adjacent
+ai/ops     mcp server  llm agent orchestration  openai-compat gateway  prompt security
+
+$ cat ~/.config/approach
+
+ai-native workflow:
+  heavy use of ai agents for coding · root-cause analysis · operational automation
+  my half: problem discovery · architecture decisions · production validation · red lines
+
 prefer boring reliability over clever fragility
 prefer static binaries over dependency piles
 prefer observable failures over silent magic
 prefer terminal workflows over dashboards
+
+$ echo $LOCATION
+China · full-remote · open to overseas / async-first
 ```
-
-## /status
-
-No third-party stats widgets.
-No broken embeds.
-No private repos.
-
----
-
-<pre>
-$ uptime
-systems up, scripts sharp, logs readable
-</pre>
