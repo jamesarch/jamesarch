@@ -28,6 +28,10 @@ $ cat /proc/impact
 [incident-492]    7600 overseas agents offline · machines alive · no app error
                   root: oversea dns line → broken cloudflare cname → 403 on /ws/agent
                   fix:  dig +subnet confirmed · direct A record · 4 min full recovery
+
+[aiops]           hermes-agent (NousResearch) deployed in production ops
+                  extended with custom MCP server: 154 infra skills (vsphere · ansible · metrics)
+                  3-tier model fallback · full sqlite audit log per agent action · zero inbound ports
 ```
 
 ---
@@ -41,9 +45,8 @@ $ ls -la ~/oss/
 254 pkg: `10.5s → 0.078s` (~130×) · musl static · `.deb` `.rpm` debian-src · 4 MB scratch docker  
 packaged in COPR / AUR / Debian
 
-**[`hermes-agent`](https://github.com/jamesarch/hermes-agent)** — production AIOps agent  
-natural language → metrics / ansible / vsphere via MCP · 3-tier model fallback  
-systemd resident · zero inbound ports · full SQLite audit log per action · running in prod
+**[`browser-autos`](https://github.com/browser-autos/browser-autos)** — cloud-native headless browser automation API  
+TypeScript · multi-arch Docker (`browserautos/browser-autos`) · production-grade
 
 **[`ghostty-patched`](https://github.com/jamesarch/ghostty-patched)** — personal ghostty build  
 `new_tab_with_command` · `link-file` · concurrency deadlock fix on link-click  
